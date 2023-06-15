@@ -1,6 +1,12 @@
 
 // EJERCICIO 2
 
+
+
+btnCalcular.addEventListener("click", function(){
+    // console.log("Boton");
+
+    
 const cantEnamorado = document.querySelector("#florkEnamorado").value;
 const cantMamado = document.querySelector("#florkMamado").value;
 const cantRandom = document.querySelector("#florkRandom").value;
@@ -8,10 +14,6 @@ const cantRandom = document.querySelector("#florkRandom").value;
 const Alert = document.querySelector("#alerta");
 
 const result = Number(cantEnamorado) + Number(cantMamado) + Number(cantRandom)
-
-
-btnCalcular.addEventListener("click", function(){
-    // console.log("Boton");
 
     if (cantEnamorado === "" || cantMamado === "" || cantRandom === "") {
         document.querySelector("#alerta").innerHTML = "No has seleccionado ningún sticker";
@@ -35,4 +37,5 @@ btnCalcular.addEventListener("click", function(){
       }
 
 });
+
 
